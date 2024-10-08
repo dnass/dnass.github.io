@@ -1,0 +1,11 @@
+{
+  "title": "Crossworld",
+  "publications": ["Personal"],
+  "date": "2022-02-13",
+  "image": "@assets/crossworld.png",
+  "alt": "A game with a list of clues and a partially filled in map.",
+  "url": "https://crossworld.netlify.app/",
+  "dark": true,
+  "technologies": ["Svelte", "SvelteKit"],
+  "roles": ["Design", "Development"]
+}

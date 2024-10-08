@@ -1,0 +1,11 @@
+{
+  "title": "Website launch",
+  "publications": ["The Examination"],
+  "date": "2023-09-13",
+  "image": "@assets/examination.png",
+  "alt": "The Examination homepage.",
+  "url": "https://www.theexamination.org",
+  "technologies": [],
+  "roles": ["Project strategy"],
+  "dark": true
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Local reporting initiative",
+  "publications": ["The Trace"],
+  "date": "2023-02-21",
+  "image": "@assets/trace-local.png",
+  "alt": "Story carousels for Philadelphia and Chicago .",
+  "url": "https://www.thetrace.org/local/",
+  "technologies": ["WordPress", "PHP"],
+  "roles": ["Design", "Development", "Project strategy"],
+  "dark": true
+}

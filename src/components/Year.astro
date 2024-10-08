@@ -1,0 +1,18 @@
+---
+interface Props {
+  value?: string;
+}
+
+const { value } = Astro.props;
+---
+
+{
+  value && (
+    <div
+      data-year
+      class='text-theme-400 col-start-1 self-center font-serif text-6xl font-thin italic opacity-[var(--ramp)] blur-[calc((1_-_var(--ramp))_*_15px)] will-change-[opacity,_filter] lg:text-7xl'
+    >
+      {value}
+    </div>
+  )
+}

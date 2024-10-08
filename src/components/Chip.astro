@@ -1,0 +1,19 @@
+---
+interface Props {
+  interactive?: boolean;
+  attrs?: { [key in string]: string };
+}
+
+const { attrs, interactive = false } = Astro.props;
+const El = interactive ? 'button' : 'div';
+---
+
+<El
+  {...attrs}
+  class:list={[
+    'bg-theme-950 text-theme-200 whitespace-nowrap rounded-full px-3 py-1 text-sm font-light leading-snug transition-colors duration-100 ease-in-out',
+    interactive && 'hocus:bg-theme-700 cursor-pointer focus:outline-none',
+  ]}
+>
+  <slot />
+</El>

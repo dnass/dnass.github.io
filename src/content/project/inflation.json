@@ -1,0 +1,11 @@
+{
+  "title": "Inflation calculator: How do rising prices affect your personal finances?",
+  "publications": ["Global News"],
+  "date": "2022-05-12",
+  "image": "@assets/inflation-calculator.png",
+  "alt": "The inflation calculator interface and a chart of inflation data.",
+  "info": "With inflation dominating the headlines, I built this calculator to allow Canadians to see in depth how rising prices affect their own budgets. The project uses <a href=\"https://github.com/ShawONEX/global-news-interactive-data/actions/workflows/consumer-price-index.yaml\">GitHub Actions</a> to automatically <a href=\"https://github.com/ShawONEX/global-news-interactive-data/blob/main/consumer-price-index/scripts/cpi.R\">process</a> and <a href=\"https://github.com/ShawONEX/global-news-interactive-data/tree/main/consumer-price-index/data\">publish</a> monthly inflation data releases from Statistics Canada. In the interactive app, built with Svelte, users can select a province and plug in numbers from their own budget to see how much their spending has increased over time.",
+  "url": "https://globalnews.ca/news/8820620/inflation-calculator-interactive-personal-finances/",
+  "technologies": ["D3", "Svelte", "GitHub Actions", "R"],
+  "roles": ["Design", "Development", "Data analysis"]
+}

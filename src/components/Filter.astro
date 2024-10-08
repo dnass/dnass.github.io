@@ -1,0 +1,68 @@
+---
+interface Props {
+  label: string;
+  items: string[];
+}
+
+import Chip from '@components/Chip.astro';
+
+const { label, items } = Astro.props;
+---
+
+<div class='flex max-w-full flex-row items-center gap-3'>
+  <div class='text-theme-100/80 small-caps font-serif text-sm'>
+    {label}
+  </div>
+  <div
+    class='relative flex flex-row gap-1 overflow-x-scroll pr-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'
+  >
+    {
+      items.map((item, i) => {
+        const id = `${label}-${i}`;
+        const slug = item.toLowerCase().replace(/[^a-z0-9]/g, '-');
+
+        return (
+          <Chip interactive attrs={{ [`data-${label}-filter`]: slug }}>
+            {item}
+          </Chip>
+        );
+      })
+    }
+  </div>
+</div>
+
+<style is:inline data-filter-style={label}></style>
+
+<script define:vars={{ label }}>
+  const selected = new Set();
+  const style = document.querySelector(`[data-filter-style="${label}"]`);
+  const selector = `data-${label}-filter`;
+
+  document.querySelectorAll(`[${selector}]`).forEach((button) => {
+    button.addEventListener('click', () => {
+      button.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+
+      const filter = button.getAttribute(selector);
+
+      if (selected.has(filter)) {
+        selected.delete(filter);
+        button.classList.remove('!bg-theme-500');
+      } else {
+        selected.add(filter);
+        button.classList.add('!bg-theme-500');
+      }
+
+      if (selected.size !== 0) {
+        const selector = [...selected]
+          .map((filter) => `[data-tags~=${filter}]`)
+          .join(',');
+
+        style.innerHTML = `[data-tags]:not(${selector}) { opacity: 0.1; height: 5rem; pointer-events: none; }`;
+      } else {
+        style.innerHTML = '';
+      }
+
+      setTimeout(() => document.dispatchEvent(new Event('filter')), 200);
+    });
+  });
+</script>

@@ -1,0 +1,10 @@
+{
+  "title": "Meet the lobbyists connected to Canada’s federal party leaders",
+  "publications": ["Investigative Journalism Foundation"],
+  "date": "2024-06-28",
+  "image": "@assets/canada-lobbying.png",
+  "alt": "A network visualization of Justin Trudeau's connections to lobbyists.",
+  "url": "https://theijf.org/who-knows-whom-in-ottawa",
+  "technologies": ["D3", "Svelte"],
+  "roles": ["Development"]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "How a new ‘nature economy’ is transforming the fight for B.C.’s ancient forests",
+  "publications": ["Global News"],
+  "date": "2023-04-20",
+  "image": "@assets/nature-economy.png",
+  "alt": "A map showing the location of a giant fir within British Columbia, and an inset photo.",
+  "url": "https://globalnews.ca/news/9633655/new-nature-economy-bc-forests/",
+  "technologies": ["Svelte", "D3"],
+  "roles": ["Design", "Development"],
+  "dark": true
+}

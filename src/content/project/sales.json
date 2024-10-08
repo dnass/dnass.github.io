@@ -1,0 +1,11 @@
+{
+  "title": "How Many Guns Did Americans Buy Last Month?",
+  "publications": ["The Trace"],
+  "date": "2020-08-03",
+  "image": "@assets/gun-sales-estimates.png",
+  "alt": "Table showing state-level estimates of gun sales.",
+  "info": "The FBI's monthly gun background check data became <a href='https://apnews.com/article/8ddad3189eb8864e9ae6b123e09b6900'>major news</a> amid 2020's coronavirus fears and social unrest, but the top-line numbers lack important context. To give readers a clearer picture of the trend, I built this gun sales explainer and database, using the raw FBI numbers to produce seasonally adjusted sales estimates at the national and state level. My analysis draws on the work of economist <a href='https://smallarmsanalytics.com/'>Jurgen Brauer</a>, as well as prior analyses by <a href='https://github.com/BuzzFeedNews/nics-firearm-background-checks'>BuzzFeed News</a> and <a href='https://github.com/nytimes/gunsales'>The New York Times</a>. The project updates on a monthly basis as new data is released.",
+  "url": "https://www.thetrace.org/features/gun-sales-estimates/",
+  "technologies": ["Svelte", "Python"],
+  "roles": ["Design", "Development", "Data analysis"]
+}

@@ -1,0 +1,21 @@
+---
+import Filter from '@components/Filter.astro';
+
+interface Props {
+  filters: { label: string; items: string[] }[];
+}
+
+const { filters } = Astro.props;
+---
+
+<div
+  class='sticky top-[100vh] z-20 col-span-full -mx-4 h-0 md:col-span-4 md:col-start-2 md:mx-0 lg:col-span-3 lg:col-start-2 lg:-mx-12'
+>
+  <div class='translate-y-[-100%] md:pb-4'>
+    <div
+      class='bg-theme-900/80 flex flex-col gap-1 overflow-clip py-3 pl-4 pr-0 drop-shadow-md backdrop-blur-xl md:rounded-lg'
+    >
+      {filters.map((filter) => <Filter {...filter} />)}
+    </div>
+  </div>
+</div>

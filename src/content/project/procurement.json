@@ -1,0 +1,18 @@
+{
+  "title": "Procurement",
+  "publications": ["Investigative Journalism Foundation"],
+  "date": "2024-08-13",
+  "image": "@assets/procurement.png",
+  "alt": "A bar chart of federal procurement contracts and a list of top buyers.",
+  "url": "https://theijf.org/procurement",
+  "technologies": [
+    "Next.js",
+    "React",
+    "Python",
+    "PostgreSQL",
+    "D3",
+    "AWS Lambda"
+  ],
+  "roles": ["Design", "Development", "Data analysis", "Project strategy"],
+  "dark": true
+}

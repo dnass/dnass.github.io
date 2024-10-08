@@ -1,0 +1,12 @@
+{
+  "title": "Explore the Hun family’s business empire",
+  "publications": ["The Phnom Penh Post"],
+  "date": "2016-07-07",
+  "image": "@assets/hun-family-business-empire.png",
+  "alt": "Visualization of the business holdings of Cambodian Prime Minister Hun Sen's extended family.",
+  "info": "A Global Witness <a href='https://www.globalwitness.org/en/reports/hostile-takeover/'>report</a> detailing the vast business holdings of Hun Sen's extended family served as the basis for this interactive, my first ever D3 project. This article was also.",
+  "url": "https://web.archive.org/web/20230725114623/https://phnompenhpost.com/national-politics/interactive-explore-hun-familys-business-empire",
+  "technologies": ["D3"],
+  "roles": ["Design", "Development"],
+  "dark": true
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Inside COVID’s ‘Invisible Hospitals’",
+  "publications": ["Global News"],
+  "date": "2022-01-29",
+  "image": "@assets/covid-rehab-hospitals.png",
+  "alt": "A map of hospital locations in Toronto.",
+  "info": "I developed an immersive scrollytelling presentation for this multimedia investigation into three COVID patients' rehabilitation journeys. The piece incorporates video, audio, photography, maps, and text, all orchestrated by a custom-built Svelte app. I also created a new template within the Global News WordPress theme to allow publication of the statically rendered project files within the CMS.",
+  "url": "https://globalnews.ca/news/8577723/rehabilitation-hospitals-covid-19/",
+  "technologies": ["Svelte"],
+  "roles": ["Development"]
+}

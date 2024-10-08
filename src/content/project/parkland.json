@@ -1,0 +1,12 @@
+{
+  "title": "Since Parkland",
+  "publications": ["The Trace"],
+  "date": "2019-02-12",
+  "image": "@assets/since-parkland.png",
+  "alt": "Since Parkland project homepage.",
+  "info": "This project, which tells the stories of more than a thousand children killed by gun violence, was a huge collaboration between The Trace, The Miami Herald/McClatchy, and more than 200 student journalists, with a standalone website built by <a href='https://www.upstatement.com/'>Upstatement</a>. I worked closely with the Upstatement team and fellow Trace staff to conceive the design and functionality of the project site — my contributions included key features such as the category-driven navigation and star motifs. I also coordinated a team-wide push to prepare the site's content for production in Google Docs and AirTable.",
+  "url": "https://sinceparkland.org",
+  "technologies": [],
+  "roles": ["Project strategy"],
+  "dark": true
+}

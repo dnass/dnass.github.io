@@ -1,0 +1,11 @@
+{
+  "title": "The Mystery Firm That Has Become the NRA’s Top Election Consultant",
+  "publications": ["The Trace", "Politico"],
+  "date": "2018-07-13",
+  "image": "@assets/nra-starboard-strategic.png",
+  "alt": "Chart visualizing the NRA's spending with a campaign finance contractor.",
+  "info": "For <a href='https://twitter.com/mikespiesnyc'>Mike Spies'</a> story on the NRAs's dealings with its top election contractor, I created charts and an interactive explainer to illustrate the convoluted scheme. The reporting and subsequent follow-ups led to a <a href='https://www.thetrace.org/2019/02/nra-congressional-inquiry-illegal-coordination/'>congressional investigation</a> into the NRA's relationship with the firms. The article and accompanying graphics were also published in <a href='https://www.politico.com/magazine/story/2018/07/13/mystery-firm-nra-consultant-219004'>Politico</a>.",
+  "url": "https://www.thetrace.org/2018/07/nra-campaign-finance-onmessage-starboard-strategic/",
+  "technologies": ["D3"],
+  "roles": ["Design", "Development", "Data analysis"]
+}

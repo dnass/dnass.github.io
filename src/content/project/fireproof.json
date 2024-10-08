@@ -1,0 +1,11 @@
+{
+  "title": "Fireproofing the Future in California",
+  "publications": ["The New Yorker"],
+  "date": "2019-02-01",
+  "image": "@assets/california-wildfires.png",
+  "alt": "Map of wildfire area in California.",
+  "info": "I created two maps for this New Yorker/Van Alen Institute video about California's wildfire epidemic, one showing the extent of wildfire footprints around Santa Rosa and one illustrating wildfire risk zones statewide. I pulled geospatial data from <a href='http://www.fire.ca.gov/fire_prevention/fire_prevention_wildland_zones_maps'>CAL FIRE</a> and the US Census Bureau, processed it in R using the <a href='https://cran.r-project.org/web/packages/sf/'>sf</a> library, built the maps in D3 using shaded relief layers from <a href='http://srtm.csi.cgiar.org/srtmdata/'>SRTM</a>, and delivered them as SVGs to an animator who produced the final visuals that appeared in the video.",
+  "url": "https://video.newyorker.com/watch/fireproofing-the-future-in-california",
+  "technologies": ["D3", "R"],
+  "roles": ["Design", "Data analysis"]
+}

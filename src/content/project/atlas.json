@@ -1,0 +1,12 @@
+{
+  "title": "An Atlas of American Gun Violence",
+  "publications": ["The Trace"],
+  "date": "2018-12-17",
+  "image": "@assets/gun-violence-map.png",
+  "alt": "Map of shooting incidents in Brooklyn.",
+  "info": "Using a dataset provided by Gun Violence Archive, I built this interactive map of more than 150,000 shooting incidents spanning five years. To tackle the challenge of smoothly mapping that many points, I used the incredibly performant deck.gl library along with Mapbox, React, and Redux. A search feature shows users the number of shootings in their vicinity by linking the Mapbox geocoding API with Turf.js's geospatial analysis technologies. I did a <a href='https://blog.mapbox.com/visualizing-gun-violence-in-america-bb36021b3aae'>Q&A about this project</a> that was published on Mapbox's Points of Interest blog.",
+  "url": "https://www.thetrace.org/features/gun-violence-interactive-shootings-map/",
+  "technologies": ["Mapbox", "Deck.gl", "React"],
+  "roles": ["Design", "Development", "Data analysis"],
+  "dark": true
+}

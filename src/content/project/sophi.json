@@ -1,0 +1,11 @@
+{
+  "title": "Sophi implementation",
+  "publications": ["Global News"],
+  "date": "2023-09-14",
+  "image": "@assets/sophi.png",
+  "alt": "Story thumbnails on the Global News homepage.",
+  "url": "https://globalnews.ca/",
+  "technologies": ["WordPress", "PHP"],
+  "roles": ["Development", "Project strategy"],
+  "dark": true
+}

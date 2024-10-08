@@ -1,0 +1,11 @@
+{
+  "title": "The Unchecked Influence of NRA Lobbyist Marion Hammer",
+  "publications": ["The Trace", "The New Yorker"],
+  "date": "2018-02-23",
+  "image": "@assets/florida-map.png",
+  "alt": "Map visualizing the NRA grades of Florida lawmakers.",
+  "info": "For a feature on NRA lobbyist Marion Hammer, I collaborated with The New Yorker's digital team to create an interactive map illustrating the NRA grades of every Florida lawmaker. I sourced the data from the NRA's <a href='https://www.nrapvf.org/grades/'>archive</a>, and built the map with D3. The graphic was published on The Trace and in The New Yorker's <a href='https://www.newyorker.com/magazine/2018/03/05/the-nra-lobbyist-behind-floridas-pro-gun-policies'>version</a> of the article.",
+  "url": "https://www.thetrace.org/features/nra-influence-florida-marion-hammer-gun-laws/",
+  "technologies": ["D3"],
+  "roles": ["Development", "Data analysis"]
+}

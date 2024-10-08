@@ -1,0 +1,11 @@
+{
+  "title": "Visualising Cambodia’s national budget",
+  "publications": ["The Phnom Penh Post"],
+  "date": "2016-11-23",
+  "image": "@assets/cambodia-national-budget.png",
+  "alt": "Treemap diagram of four years of Cambodia's national budget data.",
+  "info": "In Cambodia, public data is scarce and often difficult to access. When I got ahold of four years of national budget figures, I built this interactive budget explorer to make the data available as a public resource.",
+  "url": "https://web.archive.org/web/20180319193250/http://phnompenhpost.com/national/interactive-visualising-cambodias-national-budget",
+  "technologies": ["D3"],
+  "roles": ["Design", "Development", "Data analysis"]
+}

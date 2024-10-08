@@ -1,0 +1,11 @@
+{
+  "title": "Gun Shops Flouted State Closure Orders in April as Industry Notched Another Big Month",
+  "publications": ["The Trace", "USA TODAY"],
+  "date": "2020-05-01",
+  "image": "@assets/coronavirus-bg-checks.png",
+  "alt": "Charts showing levels of gun violence in cities under lockdown.",
+  "info": "In the early days of the pandemic, five states declared gun dealers <a href='https://www.thetrace.org/2020/03/coronavirus-gun-store-closures-state-map/'>nonessential</a> under their stay-at-home orders. Federal background check data revealed that gun sales continued in all of those states. Reporting with my colleague <a href='https://twitter.com/champebarton'>Champe Barton</a>, we found a pattern of stores openly defying shutdown orders, and states hesitant to take action against them. This story was co-published with <a href='https://www.usatoday.com/story/news/investigations/2020/05/14/gun-shops-flouted-state-coronavirus-closures-fueling-sales-boom/3115968001/'>USA TODAY</a>.",
+  "url": "https://www.thetrace.org/2020/05/coronavirus-gun-sales-state-closures-background-checks/",
+  "technologies": ["R", "D3"],
+  "roles": ["Design", "Data analysis"]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "svelte-canvas",
+  "publications": ["Personal"],
+  "date": "2020-07-01",
+  "image": "@assets/svelte-canvas.png",
+  "alt": "Screenshot of a scatterplot visualization built with svelte-canvas.",
+  "info": "<a href='https://svelte.dev/'>Svelte</a> has been my go-to framework for a few years now, and I recently created this small library which provides an idiomatic wrapper component for the &lt;canvas&gt; element. Users can create layer components that encapsulate individual portions of the canvas, and write <a href='https://svelte.dev/tutorial/reactive-statements'>reactive</a> render functions that redraw whenever the variables that they depend on change. The library enables canvas-based <a href='https://svelte.dev/repl/8265c051bf754f8aba6f5d6ed9d0d74f?version=3.29.0'>interactive</a> <a href='https://svelte.dev/repl/b0c3901c51cd49f1a2f337f731942269?version=3.29.0'>visualizations</a> to be built using familiar Svelte conventions.",
+  "url": "https://dnass.github.io/svelte-canvas",
+  "technologies": ["Svelte", "Canvas"],
+  "roles": ["Development"],
+  "dark": true
+}

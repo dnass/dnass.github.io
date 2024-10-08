@@ -1,0 +1,10 @@
+{
+  "title": "When Cars Kill",
+  "publications": ["The New Yorker"],
+  "date": "2022-06-02",
+  "image": "@assets/road-deaths.png",
+  "alt": "A map of road fatalities in Park Slope.",
+  "url": "https://www.newyorker.com/news/our-local-correspondents/when-cars-kill-pedestrians",
+  "technologies": ["R", "Mapbox", "React"],
+  "roles": ["Development", "Data analysis"]
+}

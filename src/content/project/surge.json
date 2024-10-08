@@ -1,0 +1,12 @@
+{
+  "title": "A Historic Surge in Gun Violence Compounds the Traumas of 2020",
+  "publications": ["The Trace"],
+  "date": "2020-12-21",
+  "image": "@assets/2020-gun-violence.png",
+  "alt": "Chart comparing mass shootings in 2020 to previous years.",
+  "info": "This story was an attempt to make sense of the surge of gun violence that accompanied the social upheavals of 2020. Centering the perspectives of violence prevention workers and members of communities that bear the brunt of gun violence, it also incorporates national and city-level crime data and rich photography to create a holistic picture of the toll guns took in 2020.",
+  "url": "https://www.thetrace.org/2020/12/shootings-data-philadelphia-cleveland-chicago-gun-violence/",
+  "technologies": ["Svelte", "D3"],
+  "roles": ["Design", "Development", "Data analysis"],
+  "dark": true
+}

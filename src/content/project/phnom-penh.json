@@ -1,0 +1,12 @@
+{
+  "title": "The Changing Face of Phnom Penh",
+  "publications": ["The Phnom Penh Post"],
+  "date": "2016-07-29",
+  "image": "@assets/changing-face-phnom-penh.png",
+  "alt": "Satellite map presentation showcasing timelapses of major infrastructure developments in Phnom Penh.",
+  "info": "The city of Phnom Penh is being dramatically — and often violently — transformed by large-scale construction and land reclamation projects. For this interactive, I created immersive time lapses of Google Earth satellite imagery to illustrate the city's astonishing pace of growth. A locator map built in Mapbox provides geographic context.",
+  "url": "https://web.archive.org/web/20221204113124/https://www.phnompenhpost.com/multimedia/changing-face-phnom-penh/",
+  "technologies": ["Mapbox"],
+  "roles": ["Design", "Development"],
+  "dark": true
+}
