@@ -6,5 +6,5 @@
   "alt": "A network visualization of Justin Trudeau's connections to lobbyists.",
   "url": "https://theijf.org/who-knows-whom-in-ottawa",
   "technologies": ["D3", "Svelte"],
-  "roles": ["Development"]
+  "roles": ["Development", "Dataviz"]
 }

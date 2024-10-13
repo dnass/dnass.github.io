@@ -5,7 +5,7 @@
   "image": "@assets/apple-news.png",
   "alt": "An article on Apple News.",
   "url": "https://apple.news/TCyplH7AoS0uG19CFji_ZQg",
-  "technologies": ["WordPress", "Node.js", "AWS Lambda", "Apple News"],
+  "technologies": ["WordPress", "Node.js", "AWS", "Apple News"],
   "roles": ["Development"],
   "dark": true
 }

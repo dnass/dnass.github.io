@@ -5,14 +5,13 @@
   "image": "@assets/procurement.png",
   "alt": "A bar chart of federal procurement contracts and a list of top buyers.",
   "url": "https://theijf.org/procurement",
-  "technologies": [
-    "Next.js",
-    "React",
-    "Python",
-    "PostgreSQL",
-    "D3",
-    "AWS Lambda"
+  "technologies": ["Next.js", "React", "Python", "PostgreSQL", "D3", "AWS"],
+  "roles": [
+    "Design",
+    "Development",
+    "Data analysis",
+    "Project strategy",
+    "Dataviz"
   ],
-  "roles": ["Design", "Development", "Data analysis", "Project strategy"],
   "dark": true
 }

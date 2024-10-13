@@ -7,6 +7,6 @@
   "info": "I worked with reporter Brian Freskos and The New Yorker's digital team to create two Mapbox maps for this multimedia feature built in React. The first illustrates <a href='https://www.atf.gov/resource-center/firearms-trace-data-2017'>ATF crime gun traces</a> by connecting states with swoopy arrows, which were drawn with <a href='http://turfjs.org/'>Turf.js</a> and baked out to GeoJSON files. The second uses a scroll-driven flyover to explore the locations where several dozen stolen guns were recovered.",
   "url": "https://www.thetrace.org/features/gun-store-theft-trafficking-atf/",
   "technologies": ["React", "Mapbox"],
-  "roles": ["Development", "Data analysis"],
+  "roles": ["Development", "Data analysis", "Dataviz", "Mapping"],
   "dark": true
 }

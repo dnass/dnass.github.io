@@ -4,8 +4,8 @@
   "date": "2022-10-26",
   "image": "@assets/constitution.png",
   "alt": "A chart of constitutional amendments over time.",
-  "info": "I contributed data visualization and development to this article by historian Jill Lepore about the history of efforts to amend the U.S. Constitution. Components included a set of interactive survey questions exploring Americans' attitudes toward the Constitution, as well as a longform annotated timeline visualizing more than 10,000 failed amendments.",
+  "info": "I contributed Dataviz and development to this article by historian Jill Lepore about the history of efforts to amend the U.S. Constitution. Components included a set of interactive survey questions exploring Americans' attitudes toward the Constitution, as well as a longform annotated timeline visualizing more than 10,000 failed amendments.",
   "url": "https://www.newyorker.com/culture/annals-of-inquiry/the-united-states-unamendable-constitution",
   "technologies": ["React"],
-  "roles": ["Development", "Data analysis"]
+  "roles": ["Development", "Data analysis", "Dataviz"]
 }

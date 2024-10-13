@@ -7,5 +7,5 @@
   "info": "For this investigation into the federal government's failure to regulate gun dealers, co-published with <a href='https://www.usatoday.com/in-depth/news/investigations/2021/05/26/gun-dealers-let-off-hook-when-atf-inspections-find-violations/7210266002/'>USA TODAY</a>, I also parsed and analyzed thousands of pages of documents in Node and R, and then published them in this interactive database built with <a href='https://sapper.svelte.dev/'>Sapper</a> and Airtable. I produced explanatory scrollytelling components for the main <a hre f='https://www.thetrace.org/2021/05/atf-inspection-report-gun-store-ffl-violation/'>feature story</a> using Svelte. Shortly afterpublication, Congressional Democrats <a href='https://www.thetrace.org/2021/07/gun-dealer-congress-bill-atf-democrats/'>introduced legislation</a> to tighten the penalties for lawbreaking gun dealers.",
   "url": "https://projects.thetrace.org/inspections/",
   "technologies": ["Svelte", "SvelteKit", "Mapbox"],
-  "roles": ["Design", "Development", "Data analysis", "Project strategy"]
+  "roles": ["Design", "Development", "Data analysis", "Mapping"]
 }

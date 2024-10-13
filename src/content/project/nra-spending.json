@@ -4,8 +4,8 @@
   "date": "2018-07-29",
   "image": "@assets/nra-tracker.png",
   "alt": "Table of NRA campaign finance data.",
-  "info": "I built this news app to track the NRA's spending activity during the 2018 midterms, using data from the FEC and ProPublica's <a href='https://propublica.github.io/campaign-finance-api-docs/'>Campaign Finance API</a>. An accompanying <a href='https://twitter.com/nramoneybot'>Twitter bot</a> tweeted every time new activity ed in the tracker, and also posted calls for key NRA races on election night. The project's serverless backend ran on AWS Lambda and the frontend was built in <a href='https://svelte.technology/'>Svelte</a>.",
+  "info": "I built this news app to track the NRA's spending activity during the 2018 midterms, using data from the FEC and ProPublica's <a href='https://propublica.github.io/campaign-finance-api-docs/'>Campaign Finance API</a>. An accompanying <a href='https://twitter.com/nramoneybot'>Twitter bot</a> tweeted every time new activity ed in the tracker, and also posted calls for key NRA races on election night. The project's serverless backend ran on AWS and the frontend was built in <a href='https://svelte.technology/'>Svelte</a>.",
   "url": "https://www.thetrace.org/features/nra-campaign-finance-tracker/",
-  "technologies": ["Svelte", "D3", "AWS Lambda"],
+  "technologies": ["Svelte", "D3", "AWS"],
   "roles": ["Design", "Development", "Data analysis"]
 }

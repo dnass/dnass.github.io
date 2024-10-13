@@ -6,5 +6,5 @@
   "alt": "A map of road fatalities in Park Slope.",
   "url": "https://www.newyorker.com/news/our-local-correspondents/when-cars-kill-pedestrians",
   "technologies": ["R", "Mapbox", "React"],
-  "roles": ["Development", "Data analysis"]
+  "roles": ["Development", "Data analysis", "Mapping"]
 }

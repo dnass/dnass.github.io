@@ -19,4 +19,16 @@ export const collections = {
         dark: z.boolean().optional().default(false),
       }),
   }),
+  awards: defineCollection({
+    type: 'data',
+    schema: z.array(
+      z.object({
+        org: z.string(),
+        award: z.string(),
+        date: z.string(),
+        note: z.string().optional(),
+        url: z.string(),
+      }),
+    ),
+  }),
 };

@@ -6,6 +6,6 @@
   "alt": "A map showing the location of a giant fir within British Columbia, and an inset photo.",
   "url": "https://globalnews.ca/news/9633655/new-nature-economy-bc-forests/",
   "technologies": ["Svelte", "D3"],
-  "roles": ["Design", "Development"],
+  "roles": ["Design", "Development", "Mapping"],
   "dark": true
 }
