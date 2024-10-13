@@ -1,0 +1,38 @@
+---
+import Icon from '@components/Icon.astro';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+
+const links = [
+  {
+    alt: 'GitHub',
+    icon: faGithubSquare,
+    href: 'https://github.com/dnass/',
+  },
+  {
+    alt: 'LinkedIn',
+    icon: faLinkedin,
+    href: 'https://www.linkedin.com/in/daniel-nass/',
+  },
+  {
+    alt: 'Email',
+    icon: faEnvelopeSquare,
+    href: 'mailto:dnlnss@gmail.com',
+  },
+];
+---
+
+<div class='mx-auto flex flex-row gap-2'>
+  {
+    links.map(({ icon, href, alt }) => (
+      <a
+        {href}
+        target='_blank'
+        aria-label={alt}
+        class='text-theme-200 transition-colors duration-200 ease-in-out active:!text-theme-600 hocus:text-theme-400'
+      >
+        <Icon {icon} params={{ classes: 'fa-2x' }} />
+      </a>
+    ))
+  }
+</div>

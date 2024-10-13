@@ -1,0 +1,17 @@
+---
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+const id = text.toLowerCase().replace(/[^a-z0-9]/g, '-');
+---
+
+<h2
+  {id}
+  class='col-span-full mb-12 h-5 border-b border-theme-900 text-center font-serif text-2xl font-semibold md:text-3xl lg:col-span-3 lg:col-start-2 lg:-mx-8'
+>
+  <span class='bg-theme-950 px-3 lg:px-4'>
+    {text}
+  </span>
+</h2>

@@ -11,8 +11,9 @@ const El = interactive ? 'button' : 'div';
 <El
   {...attrs}
   class:list={[
-    'bg-theme-950 text-theme-200 whitespace-nowrap rounded-full px-3 py-1 text-sm font-light leading-snug transition-colors duration-100 ease-in-out',
-    interactive && 'hocus:bg-theme-700 cursor-pointer focus:outline-none',
+    'whitespace-nowrap rounded-full bg-theme-950 px-3 py-1 text-xs font-light leading-snug text-theme-200 md:text-sm',
+    interactive &&
+      'cursor-pointer transition-colors duration-100 ease-in-out hocus:bg-theme-700',
   ]}
 >
   <slot />

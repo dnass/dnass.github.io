@@ -1,16 +1,22 @@
 ---
 interface Props {
   label: string;
+  icon: IconDefinition;
   items: string[];
 }
 
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import Chip from '@components/Chip.astro';
+import Icon from '@components/Icon.astro';
 
-const { label, items } = Astro.props;
+const { label, icon, items } = Astro.props;
 ---
 
 <div class='flex max-w-full flex-row items-center gap-3'>
-  <div class='text-theme-100/80 small-caps font-serif text-sm'>
+  <div
+    class='small-caps flex flex-row items-center gap-2 font-serif text-xs text-theme-100/80 md:text-sm'
+  >
+    <Icon {icon} params={{ classes: 'fa-fw' }} />
     {label}
   </div>
   <div

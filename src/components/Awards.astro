@@ -1,0 +1,49 @@
+---
+interface Props {
+  items: CollectionEntry<'awards'>['data'];
+}
+
+import type { CollectionEntry } from 'astro:content';
+import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
+import Subhed from '@components/Subhed.astro';
+import Icon from '@components/Icon.astro';
+
+const { items } = Astro.props;
+---
+
+<div class='col-span-full text-lg md:col-span-3 md:col-start-2'>
+  <Subhed text='Awards and recognition' />
+  <ul class='text-l'>
+    {
+      items.map(({ org, award, note, url, date }) => (
+        <li class='-ml-3'>
+          <a
+            class=':duration-200 group flex flex-row items-center gap-3 rounded-full py-1 pl-3 pr-2 leading-snug transition-colors duration-200 ease-in-out active:!bg-theme-800 active:outline-none hocus:bg-theme-900'
+            href={url}
+            target='_blank'
+          >
+            <span class='font-serif font-extralight tabular-nums text-theme-400'>
+              {date.slice(0, 4)}
+            </span>
+            <span>
+              <span class="relative after:px-1 after:opacity-50 after:content-['•']">
+                {org}
+              </span>
+              <span class='font-light'>{award}</span>
+              {note && (
+                <span class='ml-1 font-light text-theme-300'>({note})</span>
+              )}
+            </span>
+            <Icon
+              icon={faCircleRight}
+              params={{
+                classes:
+                  'transition-opacity duration-200 opacity-0 ml-auto group-hocus:opacity-100',
+              }}
+            />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

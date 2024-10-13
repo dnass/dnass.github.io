@@ -1,25 +1,55 @@
 ---
 interface Props {
   title: string;
+  description: string;
 }
 
 import '@fontsource-variable/outfit';
 import '@fontsource-variable/roboto-slab';
+import { SEO } from 'astro-seo';
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang='en'>
+<html class='scroll-smooth' lang='en'>
   <head>
-    <meta charset='UTF-8' />
-    <meta name='description' content='Astro description' />
-    <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='generator' content={Astro.generator} />
-    <title>{title}</title>
+    <SEO
+      charset='UTF-8'
+      title={title}
+      description={description}
+      extend={{
+        link: [
+          {
+            rel: 'icon',
+            type: 'image/svg+xml',
+            href: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Ccircle cx='5' cy='5' r='5' fill='%236a6095' /%3E%3C/svg%3E",
+          },
+        ],
+        meta: [
+          { name: 'viewport', content: 'width=device-width' },
+          { name: 'generator', content: Astro.generator },
+          { name: 'theme-color', content: '#25222f' },
+        ],
+      }}
+      openGraph={{
+        basic: {
+          title,
+          image: '',
+          type: 'website',
+        },
+        optional: { description },
+      }}
+      twitter={{
+        title,
+        description,
+        card: 'summary',
+      }}
+    />
   </head>
-  <body class='bg-theme-950 [&_*::selection]:bg-theme-600 font-sans'>
+  <body
+    class='bg-theme-950 font-sans [&_*::selection]:bg-theme-600 [&_*:focus]:outline-none motion-reduce:[&_*]:delay-0 motion-reduce:[&_*]:duration-0 motion-reduce:[&_*]:after:duration-0'
+  >
     <slot />
   </body>
 </html>

@@ -3,8 +3,26 @@ import Layout from '@layouts/Layout.astro';
 import Card from '@components/Card.astro';
 import Filters from '@components/Filters.astro';
 import Year from '@components/Year.astro';
+import Links from '@components/Links.astro';
+import Awards from '@components/Awards.astro';
+import Subhed from '@components/Subhed.astro';
+import Content from '@components/Content.astro';
+import { Content as Bio } from '@components/bio.md';
+import { Content as Footer } from '@components/footer.md';
+import {
+  faNewspaper,
+  faScrewdriverWrench,
+  faHatWizard,
+} from '@fortawesome/free-solid-svg-icons';
 import { getFilterItems } from '@utils/getFilterItems';
 import { getCollection } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+const meta = {
+  title: 'Daniel Nass ⫸ Portfolio',
+  description:
+    'Toronto-based newsroom web developer specializing in news apps, dataviz, and CMS development.',
+};
 
 const allProjects = (await getCollection('project'))
   .map(({ data }) => ({
@@ -21,44 +39,83 @@ const yearIndices = new Map(
   ]),
 );
 
+const allAwards = await getEntry('awards', 'awards');
+
 const filters = [
   {
     label: 'Publications',
+    icon: faNewspaper,
     items: getFilterItems(allProjects, 'publications'),
   },
   {
     label: 'Technologies',
+    icon: faScrewdriverWrench,
     items: getFilterItems(allProjects, 'technologies'),
   },
   {
     label: 'Roles',
+    icon: faHatWizard,
     items: getFilterItems(allProjects, 'roles'),
   },
 ];
 ---
 
-<Layout title='Daniel Nass ⫸ Portfolio'>
-  <main class='mx-auto mt-24 grid max-w-7xl grid-cols-5 gap-5 p-4'>
-    <div
-      class='text-theme-100 col-span-full mb-12 text-center font-serif md:col-span-3 md:col-start-2'
+<Layout {...meta}>
+  <div
+    class='mx-auto mb-8 mt-16 grid max-w-7xl grid-cols-5 gap-x-5 gap-y-12 px-4 text-theme-100 md:mb-24'
+  >
+    <header
+      class='col-span-full flex flex-col items-stretch font-serif lg:col-span-3 lg:col-start-2'
     >
-      <h1 class='mb-1 text-7xl font-extrabold'>Daniel Nass</h1>
-      <h2 class='mb-2 text-3xl font-bold'>News ⫸ Data ⫸ Graphics ⫸ Code</h2>
-    </div>
-    <div class='col-span-full mb-48 grid grid-cols-subgrid gap-y-5'>
-      <Filters filters={filters} />
-      <div class='col-span-full mb-44 grid grid-cols-subgrid gap-y-5'>
-        {
-          allProjects.map((proj, i) => (
-            <>
-              <Year value={yearIndices.get(i)} />
-              <Card {...proj} lazy={i > 3} />
-            </>
-          ))
-        }
+      <h1
+        class='mb-1 text-center text-5xl font-extrabold tracking-wide md:text-6xl'
+      >
+        Daniel Nass
+      </h1>
+      <Subhed text='Newsroom web developer' />
+      <Links />
+    </header>
+
+    <main
+      class='col-span-full mb-24 grid grid-cols-subgrid gap-y-24 md:mb-36 lg:gap-y-32'
+    >
+      <Content
+        classes='col-span-full text-lg font-light leading-normal md:col-span-3 md:col-start-2 md:text-xl '
+      >
+        <Bio />
+      </Content>
+
+      <div class='col-span-full grid grid-cols-subgrid'>
+        <Subhed text='Portfolio' />
+
+        <div id='items' class='col-span-full grid grid-cols-subgrid'>
+          <Filters filters={filters} />
+
+          <div
+            class='col-span-full mb-32 grid grid-cols-subgrid gap-y-5 lg:mb-40'
+          >
+            {
+              allProjects.map((proj, i) => (
+                <>
+                  <Year value={yearIndices.get(i)} />
+                  <Card {...proj} lazy={i > 3} />
+                </>
+              ))
+            }
+          </div>
+        </div>
       </div>
-    </div>
-  </main>
+
+      <Awards items={allAwards.data} />
+    </main>
+    <footer
+      class='col-span-full border-t border-t-theme-900 pt-2 lg:col-span-3 lg:col-start-2'
+    >
+      <Content classes='text-sm'>
+        <Footer />
+      </Content>
+    </footer>
+  </div>
 </Layout>
 
 <script>
@@ -79,4 +136,13 @@ const filters = [
   document.addEventListener('resize', ramp);
   document.addEventListener('filter', ramp);
   ramp();
+
+  const portfolio = document.getElementById('items')!;
+  const observer = new IntersectionObserver(
+    ([{ isIntersecting }]) => {
+      portfolio.style.setProperty('--filter', isIntersecting ? '1' : '0');
+    },
+    { rootMargin: '200% 0px -200px 0px' },
+  );
+  observer.observe(portfolio);
 </script>

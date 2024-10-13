@@ -6,4 +6,5 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   site: 'https://dnass.github.io',
   integrations: [tailwind()],
+  compressHTML: false,
 });

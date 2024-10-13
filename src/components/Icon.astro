@@ -1,0 +1,18 @@
+---
+import type {
+  IconParams,
+  IconDefinition,
+} from '@fortawesome/fontawesome-svg-core';
+import { icon } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
+interface Props {
+  icon: IconDefinition;
+  params?: IconParams;
+}
+
+const { icon: iconDef, params = {} } = Astro.props;
+const { html } = icon(iconDef, params);
+---
+
+<Fragment set:html={html} />

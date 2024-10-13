@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-2024",
+  "name": "dnass.github.io",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -16,7 +16,11 @@
     "@fontsource-variable/roboto-slab": "^5.1.0",
     "@fontsource-variable/source-serif-4": "^5.1.0",
     "@fontsource/young-serif": "^5.1.0",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "astro": "^4.15.9",
+    "astro-seo": "^0.8.4",
     "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2"
   },
