@@ -4,7 +4,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://dnass.github.io',
+  site: 'https://danielnass.net',
   integrations: [tailwind()],
   compressHTML: false,
 });
