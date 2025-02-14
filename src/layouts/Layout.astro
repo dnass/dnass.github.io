@@ -6,6 +6,7 @@ interface Props {
 
 import '@fontsource-variable/outfit';
 import '@fontsource-variable/roboto-slab';
+import '../styles/global.css';
 import { SEO } from 'astro-seo';
 
 const { title, description } = Astro.props;
@@ -53,7 +54,7 @@ const { title, description } = Astro.props;
       data-website-id='c5b51dfa-63fc-4b98-b772-42ab28c3fd85'></script>
   </head>
   <body
-    class='bg-theme-950 font-sans [&_*::selection]:bg-theme-600 [&_*:focus]:outline-none motion-reduce:[&_*]:delay-0 motion-reduce:[&_*]:duration-0 motion-reduce:[&_*]:after:duration-0'
+    class='bg-theme-950 [&_*::selection]:bg-theme-600 font-sans **:focus:outline-hidden motion-reduce:**:delay-0 motion-reduce:**:duration-0 motion-reduce:**:after:duration-0'
   >
     <slot />
   </body>

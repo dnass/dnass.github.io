@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-theme-50: #f5f5f9;
+  --color-theme-100: #e8e8f1;
+  --color-theme-200: #d6d6e7;
+  --color-theme-300: #b9b9d7;
+  --color-theme-400: #9797c3;
+  --color-theme-500: #827eb3;
+  --color-theme-600: #746ca4;
+  --color-theme-700: #6a6095;
+  --color-theme-800: #5b527b;
+  --color-theme-900: #4b4563;
+  --color-theme-950: #25222f;
+
+  --font-sans: 'Outfit Variable', sans-serif;
+  --font-serif: 'Roboto Slab Variable', serif;
+}
+
+@custom-variant hocus (&:hover, &:focus-visible);
+@custom-variant group-hocus (.group:hover &, .group:focus-visible &);

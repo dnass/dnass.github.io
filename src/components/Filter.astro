@@ -52,10 +52,10 @@ const { label, icon, items } = Astro.props;
 
       if (selected.has(filter)) {
         selected.delete(filter);
-        button.classList.remove('!bg-theme-500');
+        button.classList.remove('bg-theme-500!');
       } else {
         selected.add(filter);
-        button.classList.add('!bg-theme-500');
+        button.classList.add('bg-theme-500!');
       }
 
       if (selected.size !== 0) {

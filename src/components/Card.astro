@@ -40,7 +40,7 @@ const tags = [...publications, ...technologies, ...roles]
 <a
   href={url}
   target='_blank'
-  class='group relative top-0 col-span-5 flex h-52 flex-col rounded-xl border-4 border-solid border-theme-500 transition-all duration-200 will-change-[height] hocus:border-theme-200 md:col-span-4 md:col-start-2 lg:col-span-3 lg:col-start-2'
+  class='group border-theme-500 hocus:border-theme-200 relative top-0 col-span-5 flex h-52 flex-col rounded-xl border-4 border-solid transition-all duration-200 will-change-[height] md:col-span-4 md:col-start-2 lg:col-span-3 lg:col-start-2'
   data-tags={tags}
 >
   <div class='absolute z-10 h-full overflow-hidden rounded-lg'>
@@ -49,31 +49,31 @@ const tags = [...publications, ...technologies, ...roles]
       src={image}
       alt={alt}
       width='1500'
-      class='h-full object-cover transition-all duration-300 ease-in group-hocus:scale-150 group-hocus:blur-2xl group-hocus:contrast-150'
+      class='group-hocus:scale-150 group-hocus:blur-2xl group-hocus:contrast-150 h-full object-cover transition-all duration-300 ease-in'
     />
   </div>
   <div
     class:list={[
-      'relative z-10 flex h-full flex-col justify-between p-3 opacity-0 blur-xl transition-all delay-100 duration-500 ease-out group-hocus:opacity-100 group-hocus:blur-none md:p-4',
+      'group-hocus:opacity-100 group-hocus:blur-none relative z-10 flex h-full flex-col justify-between p-3 opacity-0 blur-xl transition-all delay-100 duration-500 ease-out md:p-4',
       dark ? 'text-theme-100' : 'text-theme-900',
     ]}
   >
     <div>
       <h3
         class:list={[
-          'mb-1 text-sm text-opacity-90',
+          'text-opacity-90 mb-1 text-sm',
           dark ? 'text-theme-200' : 'text-theme-800',
         ]}
       >
         {
           publications.map((pub) => (
-            <span class="[&:not(:last-of-type)]:after:opacity-50 [&:not(:last-of-type)]:after:content-['／']">
+            <span class="not-last-of-type:after:opacity-50 not-last-of-type:after:content-['／']">
               {pub}
             </span>
           ))
         }
       </h3>
-      <h2 class='font-serif text-2xl font-bold leading-none md:text-3xl'>
+      <h2 class='font-serif text-2xl leading-none font-bold md:text-3xl'>
         {title}
       </h2>
     </div>
@@ -86,7 +86,7 @@ const tags = [...publications, ...technologies, ...roles]
     </div>
   </div>
   <div
-    class='absolute right-0 flex h-full items-center pl-8 text-theme-200 opacity-0 transition-all duration-300 ease-out lg:group-active:!translate-x-24 lg:group-hocus:translate-x-20 lg:group-hocus:opacity-80'
+    class='text-theme-200 lg:group-hocus:translate-x-20 lg:group-hocus:opacity-80 absolute right-0 flex h-full items-center pl-8 opacity-0 transition-all duration-300 ease-out lg:group-active:translate-x-24!'
   >
     <Icon icon={faCircleRight} params={{ classes: 'fa-3x' }} />
   </div>

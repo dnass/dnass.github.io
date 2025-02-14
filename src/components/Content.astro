@@ -8,7 +8,7 @@ const { classes } = Astro.props;
 
 <div
   class:list={[
-    'flex flex-col gap-4 [&_a:active]:!text-theme-600 [&_a:focus-visible]:text-theme-400 [&_a:hover]:text-theme-400 [&_a]:text-theme-300 [&_a]:transition-colors [&_a]:duration-200 [&_a]:ease-in-out',
+    'flex flex-col gap-4 [&_a:active]:text-theme-600! [&_a:focus-visible]:text-theme-400 [&_a:hover]:text-theme-400 [&_a]:text-theme-300 [&_a]:transition-colors [&_a]:duration-200 [&_a]:ease-in-out',
     classes,
   ]}
 >

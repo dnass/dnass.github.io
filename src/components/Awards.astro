@@ -18,7 +18,7 @@ const { items } = Astro.props;
       items.map(({ org, award, note, url, date }) => (
         <li class='-ml-3'>
           <a
-            class=':duration-200 group flex flex-row items-center gap-3 rounded-full py-1 pl-3 pr-2 leading-snug transition-colors duration-200 ease-in-out active:!bg-theme-800 active:outline-none hocus:bg-theme-900'
+            class=':duration-200 group flex flex-row items-center gap-3 rounded-full py-1 pl-3 pr-2 leading-snug transition-colors duration-200 ease-in-out active:bg-theme-800! active:outline-hidden hocus:bg-theme-900'
             href={url}
             target='_blank'
           >
