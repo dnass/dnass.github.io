@@ -1,0 +1,10 @@
+{
+  "title": "Gun Violence Data Hub",
+  "publications": ["The Trace"],
+  "date": "2025-03-05",
+  "image": "@assets/datahub.png",
+  "alt": "A screenshot of the Gun Violence Data Hub library.",
+  "url": "https://datahub.thetrace.org/data-library/",
+  "technologies": ["WordPress", "PHP", "Svelte", "Redivis"],
+  "roles": ["Development"]
+}
